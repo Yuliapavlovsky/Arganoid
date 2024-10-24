@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      curvedpaddle_0: 1448135617824386690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

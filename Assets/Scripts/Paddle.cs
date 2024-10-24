@@ -58,7 +58,7 @@ public class Paddle : MonoBehaviour {
 
     void FixedUpdate() {
 
-        /*float dir = 0;
+        float dir = 0;
         if (Input.GetKey(KeyCode.LeftArrow)) {
             dir -= 1;
         }
@@ -71,14 +71,15 @@ public class Paddle : MonoBehaviour {
         float newX = pos.x + dir * speed * Time.deltaTime; // inside FixUpdate Time.deltatime is interpreted as
                                                            //Time.fixdeltatime instead 
         pos.x = newX;
-        transform.position = pos;*/
+        pos.x = Mathf.Clamp(newX,-3.6f, 3.6f );
+        transform.position = pos;
 
 
 
 
-        float direction = Input.GetAxis("Horizontal"); //same as ??? ??? ?? ?????? ??????????? ?????????
+        /*float direction = Input.GetAxis("Horizontal"); //same as ??? ??? ?? ?????? ??????????? ?????????
         Vector3 delta = Vector3.right * speed * Time.deltaTime * direction;
-        transform.position += delta;
+        transform.position += delta;*/
 
 
     }
